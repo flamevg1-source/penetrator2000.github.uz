@@ -1,0 +1,95 @@
+/* Базовые настройки */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+}
+
+.background {
+  background-image: url("head.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  min-height: 100%;
+  width: 100%;
+  color: white;
+}
+
+/* Header на весь экран */
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 4em;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.5em;
+  margin: 10px 0 20px 0;
+}
+
+.main-link {
+  background: #ff9800;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-link:hover {
+  background: #e68900;
+}
+
+/* Центрированные карточки */
+.centered-card {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(73, 73, 73, 0.658);
+  border-radius: 15px;
+  border: 2px solid rgba(255,255,255,0.5);
+  text-align: center;
+  color: #ffffff;
+  transition: transform 0.6s ease, opacity 0.6s ease, box-shadow 0.3s ease;
+  opacity: 0; /* Скрыты по умолчанию */
+  transform: translateY(50px);
+}
+
+.centered-card.show-card {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.centered-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+/* Фото */
+.profile-photo {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+/* Видео */
+.video-preview {
+  margin: 20px auto;
+  max-width: 360px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
